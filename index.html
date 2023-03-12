@@ -1,25 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
     <head>
+        <title>Zadanie 1</title>
         <meta charset="UTF-8">
-        <title>Strony Internetowe</title>
-        <style>
-            div{
-                margin:auto;
-                width: 200px;
-                align-self: center;
-                text-align: center;
-                border: 3px solid sandybrown;
-                background-color:lightgoldenrodyellow;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>
-            Michał Roman 205858
+        <div class="header">
+            <h1>Programowanie w Internecie</h1>
+            <p>Fantastyczna strona na której żaden przycisk nic nie robi!</p>
         </div>
-        <div>
-            Tu będą zadania:
+        <div class="topbar">
+            <a class="active" href="#home">
+                Główna</a>
+            <a href="#home">
+                Informacje</a>
+            <a href="#home">
+                SGGW
+            </a>
+            <a href="#home">
+                O mnie</a>
+            <a href="#home">
+                Kontakt</a>
         </div>
+
+		<div style="display:flex;">
+			<div class="sidebar">
+				<a class="active" href="#">Element 1</a>
+				<a href="#">Element 2</a>
+				<a href="#">Element 3</a>
+				<a href="#">Element 4</a>
+			</div>
+			<div class="main">
+				<div class="row">
+					<div class="column">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
+					</div>
+					<div class="column">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
+					</div>
+					<div class="column">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
+					</div>
+				</div>
+				<div class="subrow">
+					<div>
+						<img src="logosggw.jpg" alt="Logo Sggw" style="float:left; width: 300px; padding:6px; margin:6px;">
+					</div>
+					<div style="float:left;">
+						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat orci purus, vel sodales diam mattis eget. Aliquam lacus massa, accumsan luctus tortor nec, vehicula dictum neque. Proin vel metus ligula. Ut non aliquam diam, nec feugiat nunc. Praesent malesuada scelerisque fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur pellentesque orci at diam placerat dictum non a tellus. Donec mauris turpis, euismod eu ipsum nec, varius posuere sapien. Etiam congue neque metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi faucibus feugiat lectus sit amet imperdiet. Duis ultrices fermentum sem, id ultrices magna iaculis in. Nulla facilisi.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>Stopka</p>
+		</div>
     </body>
 </html>
