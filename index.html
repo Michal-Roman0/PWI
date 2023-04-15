@@ -3,6 +3,7 @@
     <head>
         <title>Zadanie 1</title>
         <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -19,12 +20,16 @@
                 SGGW
             </a>
             <a href="#home">
-                O mnie</a>
-            <a href="#home">
+                Sklep</a>
+			<a href="#home">
+                Kursy</a>
+			<a href="#home">
                 Kontakt</a>
+			<a href="#home">
+                O mnie</a>
         </div>
 
-		<div style="display:flex;">
+		<div class="mainRow">
 			<div class="sidebar">
 				<a class="active" href="#">Element 1</a>
 				<a href="#">Element 2</a>
@@ -44,8 +49,8 @@
 					</div>
 				</div>
 				<div class="subrow">
-					<div>
-						<img src="logosggw.jpg" alt="Logo Sggw" style="float:left; width: 300px; padding:6px; margin:6px;">
+					<div id="logo">
+						<img src="logosggw.jpg" alt="Logo Sggw">
 					</div>
 					<div style="float:left;">
 						<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat orci purus, vel sodales diam mattis eget. Aliquam lacus massa, accumsan luctus tortor nec, vehicula dictum neque. Proin vel metus ligula. Ut non aliquam diam, nec feugiat nunc. Praesent malesuada scelerisque fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur pellentesque orci at diam placerat dictum non a tellus. Donec mauris turpis, euismod eu ipsum nec, varius posuere sapien. Etiam congue neque metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi faucibus feugiat lectus sit amet imperdiet. Duis ultrices fermentum sem, id ultrices magna iaculis in. Nulla facilisi.</p>
@@ -55,7 +60,16 @@
 			</div>
 		</div>
 		<div class="footer">
-			<p>Stopka</p>
+			<div class="footerRow">
+				<a href="#home">Kontakt</a>
+				<a href="#home">Reklamacje</a>
+				<a href="#home">Privacy Policy</a>
+				<a href="#home">Github<a/>
+				<a href="#home">Pytania i odpowiedzi</a>
+			</div>
+			<div class="footerRow">
+				<p>Copyright 2023-2023, Michał Roman. (Prawdopodobnie) wszystkie prawa zastrzeżone.
+			</div>
 		</div>
     </body>
 </html>

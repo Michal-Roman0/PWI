@@ -34,11 +34,13 @@ body{
 
 .sidebar {
 	flex-basis:50px;
+	flex-wrap: wrap;
 	position:sticky;
 	top:0;
 	background-color: #111111;
 	padding-top: 20px;
 	padding-left: 6px;
+	align-items: flex-start;
 }
 
 .sidebar a{
@@ -48,17 +50,21 @@ body{
 	color: #818181;
 	display: block;
 	width: 150px;
+	height: 30px;
 }
 
 .sidebar a:hover{
 	color: #f1f1f1;
+
 }
 
 .sidebar a.active{
 	background-color: #0f737a;
 	color: #f1f1f1;
 }
-
+.mainRow{
+	display:flex;
+}
 .main{
 	font-size: 16px;
 	flex: 90%;
@@ -73,8 +79,8 @@ body{
 	padding: 2%;
 	background-color:#e9e9e9;
 	font-size:17px;
-
 }
+
 .subrow{
 	display:flex;
 	justify-content: center;
@@ -86,6 +92,57 @@ body{
 	background-color: #333;
 	color:#f1f1f1;
 	text-align: center;
-	padding: 5px;
+	padding: 20px;
 	font-size: 18px;
+}
+.footerRow a{
+	margin-left:5px;
+	margin-right:5px;
+	text-decoration: none;
+	color: #e9e9e9;;
+}
+.footerRow p{
+	color: #9c9c9c;
+}
+
+#logo{
+	 float:left;
+	 max-width: 100%;
+	 height: auto;
+	 padding:6px; 
+	 margin:6px;
+}
+
+@media screen and (max-width: 950px) {
+	.header{
+		font-size:22px;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.subrow{
+		flex-direction: column;
+	}
+
+	#logo{
+		width:50%;
+	}
+
+}
+@media screen and (max-width: 750px) {
+	.mainRow{
+		flex-direction: column;
+	}
+	.sidebar{
+		display:flex;
+		flex-wrap: nowrap;
+		flex-basis:0px;
+		padding-top:0px;
+		padding-left:0px;
+	}
+	.sidebar a{
+		font-size: 20px;
+		width:120px;
+		padding-top:10px;
+	}
 }
