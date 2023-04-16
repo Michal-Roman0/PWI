@@ -9,7 +9,7 @@
     <body>
         <div class="header">
             <h1>Programowanie w Internecie</h1>
-            <p>Fantastyczna strona na której żaden przycisk nic nie robi!</p>
+            <p>Fantastyczna strona na której działają przyciski na lewym sidebarze!</p>
         </div>
         <div class="topbar">
             <a class="active" href="#home">
@@ -31,12 +31,12 @@
 
 		<div class="mainRow">
 			<div class="sidebar">
-				<a class="active" href="#">Element 1</a>
-				<a href="#">Element 2</a>
-				<a href="#">Element 3</a>
-				<a href="#">Element 4</a>
+				<a class="active" href="#" onclick="changeContent(1)">Element 1</a>
+				<a href="#" onclick="changeContent(2)">Element 2</a>
+				<a href="#" onclick="changeContent(3)">Element 3</a>
+				<a href="#" onclick="changeContent(4)">Element 4</a>
 			</div>
-			<div class="main">
+			<div id="content1" class="main">
 				<div class="row">
 					<div class="column">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
@@ -58,6 +58,45 @@
 					</div>
 				</div>
 			</div>
+			<div id="content2" class="main" style="display:none;">
+				<div class="row">
+					<div class="column">
+						<div style="float:left;">
+							<h2>Element 2</h2>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat orci purus, vel sodales diam mattis eget. Aliquam lacus massa, accumsan luctus tortor nec, vehicula dictum neque. Proin vel metus ligula. Ut non aliquam diam, nec feugiat nunc. Praesent malesuada scelerisque fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur pellentesque orci at diam placerat dictum non a tellus. Donec mauris turpis, euismod eu ipsum nec, varius posuere sapien. Etiam congue neque metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi faucibus feugiat lectus sit amet imperdiet. Duis ultrices fermentum sem, id ultrices magna iaculis in. Nulla facilisi.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content3" class="main" style="display:none;">
+				<div class="row">
+					<div class="column">
+						<div style="float:left;">
+							<h2>Element 3.1</h2>
+							<p>Integer posuere leo at lorem placerat fringilla vel et sem. Vivamus viverra, augue quis faucibus egestas, nunc nulla maximus justo, non facilisis nisl arcu sit amet mi. Sed fringilla libero sit amet sapien facilisis dignissim. Nunc rutrum, neque sit amet sagittis euismod, ligula felis ultrices turpis, a ultricies dui lacus vel orci. Sed pharetra, lectus sit amet lobortis rhoncus, magna est varius nunc, ut imperdiet sem ex vitae odio. Quisque leo augue, cursus sit amet eleifend nec, tristique vitae ante. Suspendisse in augue augue. Donec at ligula maximus, congue nulla convallis, porttitor orci. Mauris sed nunc in odio venenatis lacinia. Sed hendrerit porttitor massa, ut dictum ex euismod ac. Nam augue dolor, consectetur sit amet blandit pulvinar, maximus sed mauris. Aenean mattis justo dolor, nec varius metus rhoncus sit amet. Aenean urna erat, fermentum quis euismod eu, auctor non quam. Vivamus in augue porta, pharetra odio ac, mattis tortor. Nam vel lacus ac tortor volutpat tincidunt. </p>
+						</div>
+					</div>
+					<div class="column">
+						<div style="float:left;">
+							<h2>Element 3.2</h2>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum placerat orci purus, vel sodales diam mattis eget. Aliquam lacus massa, accumsan luctus tortor nec, vehicula dictum neque. Proin vel metus ligula. Ut non aliquam diam, nec feugiat nunc. Praesent malesuada scelerisque fringilla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur pellentesque orci at diam placerat dictum non a tellus. Donec mauris turpis, euismod eu ipsum nec, varius posuere sapien. Etiam congue neque metus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi faucibus feugiat lectus sit amet imperdiet. Duis ultrices fermentum sem, id ultrices magna iaculis in. Nulla facilisi.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content4" class="main" style="display:none;">
+				<div class="row">
+					<div class="column">
+						<div style="float:left;">
+							<h2>Element 4</h2>
+							<p>Morbi tempus odio non ante ullamcorper, et consectetur risus tempus. Donec dui dolor, fermentum ac lobortis vestibulum, pretium vel sapien. Nulla eget vehicula purus. In cursus arcu mi, et ultrices risus efficitur quis. Nulla dapibus neque justo, vel tempus mi luctus non. Cras et magna ut eros fringilla sagittis a in justo. Nulla eu quam tortor. Maecenas in interdum mi, id ornare lacus. Cras feugiat magna ac sapien suscipit, ac consectetur dolor vehicula. Nullam interdum enim justo, sed blandit metus dignissim eu.</p>
+							<p>Etiam vehicula orci eu faucibus sodales. Aliquam erat volutpat. Aenean pretium, arcu et vulputate viverra, dui nunc commodo quam, feugiat maximus eros lectus nec nisi. Maecenas leo elit, tempus et augue id, blandit imperdiet urna. Integer consequat semper laoreet. Quisque eget est turpis. Fusce aliquam eleifend augue, ac semper mi malesuada tempor. Nullam tincidunt tortor vitae egestas bibendum. Nullam sit amet sapien eleifend, eleifend ligula vitae, aliquam orci. Vivamus sit amet justo ac nunc placerat malesuada id ut justo. Pellentesque scelerisque diam eget venenatis vulputate. Maecenas sollicitudin nunc efficitur posuere consectetur. Sed lacinia lectus porta, pellentesque arcu ac, mollis purus. In vitae arcu ut tellus malesuada mattis sit amet eu mi. Aliquam sed odio eros. Donec id nibh vel sapien cursus iaculis a nec ligula. </p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis eros eget risus pharetra varius nec eu dolor. Pellentesque suscipit eget nulla sit amet eleifend. Etiam venenatis, tellus a sagittis imperdiet, tellus tellus porta nisl, in auctor ante eros sed urna. Nullam nec vestibulum est, nec venenatis nisl. Mauris nunc est, molestie sit amet sapien ac, ullamcorper semper mauris. Nunc tortor metus, lacinia vitae malesuada quis, finibus interdum mauris. Suspendisse mi ante, semper nec sem at, blandit pharetra libero. Suspendisse a ultricies nisi. Maecenas eu ipsum suscipit, sollicitudin lacus ac, rhoncus purus. Suspendisse sit amet magna feugiat, dapibus leo vitae, pulvinar sapien. Quisque ut pellentesque arcu.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="footer">
 			<div class="footerRow">
@@ -71,5 +110,36 @@
 				<p>Copyright 2023-2023, Michał Roman. (Prawdopodobnie) wszystkie prawa zastrzeżone.
 			</div>
 		</div>
+		<script>
+			function changeContent(i)
+			{
+				var x1 = document.getElementById("content1");
+				var x2 = document.getElementById("content2");
+				var x3 = document.getElementById("content3");
+				var x4 = document.getElementById("content4");
+				//var elementy = [x1, x2, x3, x4];
+				//elementy.forEach(a => a.style.display = "none");
+				x1.style.display="none";
+				x2.style.display="none";
+				x3.style.display="none";
+				x4.style.display="none";
+
+				switch(i)
+				{
+					case 1:
+						x1.style.display = "block";
+						break;
+					case 2:
+						x2.style.display = "block";
+						break;
+					case 3:
+						x3.style.display = "block";	
+						break;
+					case 4:
+						x4.style.display = "block";
+						break;
+				}
+			}
+		</script>
     </body>
 </html>
